@@ -131,7 +131,7 @@ GROUP BY device_id;
 
 6- Ordinare i videogame in base alla media delle recensioni (del videogioco vogliamo solo l'ID) (500)
 ```sql
-SELECT videogame_id, AVG(rating) as 'mediaRecensioni'
+SELECT videogame_id, AVG(rating) AS 'mediaRecensioni'
 FROM reviews
 GROUP BY videogame_id
 ORDER BY mediaRecensioni DESC;
